@@ -3,7 +3,6 @@
   "source": "src/index.html",
   "version": "1.0.0",
   "description": "My portfolio",
-  "main": "index.js",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
