@@ -1,0 +1,15 @@
+@use "../utils/mixins" as m;
+
+.header {
+  background-color: var(--second-text-color);
+}
+
+.nav-list-link {
+  @include m.font(18px, 700, 22px);
+  color: var(--white-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}

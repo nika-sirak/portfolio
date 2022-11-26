@@ -1,0 +1,23 @@
+@use "../utils/mixins" as m;
+
+.hero {
+  background-color: var(--second-text-color);
+  color: var(--white-text-color);
+}
+
+.hero-title {
+  @include m.font(64px, 400, 78px);
+}
+
+.hero-subtitle {
+  @include m.font(24px, 400, 29px);
+}
+
+.hero-link {
+  @include m.font(18px, 400, 22px);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}

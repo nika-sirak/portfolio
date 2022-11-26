@@ -1,0 +1,5 @@
+@use "../utils/mixins" as m;
+
+.title {
+  @include m.font(24px, 700, 29px);
+}

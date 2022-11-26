@@ -4,10 +4,23 @@
 //Utils
 @use "./utils/variables";
 @use "./utils/visually-hidden";
+@use "./utils/mixins";
 
 //Base
 @use "./base/common";
 
 //Components
+@use "./components/section";
+@use "./components/container";
+@use "./components/logo";
+@use "./components/title";
+@use "./components/buttons";
+@use "./components/social-links";
 
 //Layout
+@use "./layout/header";
+@use "./layout/hero";
+@use "./layout/about";
+@use "./layout/skills";
+@use "./layout/projects";
+@use "./layout/footer";
