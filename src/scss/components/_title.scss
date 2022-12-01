@@ -1,5 +1,6 @@
 @use "../utils/mixins" as m;
 
 .title {
+  margin-bottom: 75px;
   @include m.font(24px, 700, 29px);
 }

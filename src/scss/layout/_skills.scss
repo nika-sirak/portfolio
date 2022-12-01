@@ -1,5 +1,8 @@
 @use "../utils/mixins" as m;
 
+.skills {
+  background-color: var(--background-color);
+}
 .skills-subtitle {
   @include m.font(18px, 600, 25px);
 }

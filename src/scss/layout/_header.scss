@@ -1,7 +1,18 @@
 @use "../utils/mixins" as m;
 
 .header {
+  padding-top: 50px;
   background-color: var(--second-text-color);
+}
+
+.header-container {
+  display: flex;
+  align-self: baseline;
+}
+
+.nav-list {
+  display: flex;
+  gap: 50px;
 }
 
 .nav-list-link {
