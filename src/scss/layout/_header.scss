@@ -1,13 +1,14 @@
 @use "../utils/mixins" as m;
 
 .header {
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: var(--second-text-color);
 }
 
 .header-container {
   display: flex;
-  align-self: baseline;
+  align-items: flex-end;
 }
 
 .nav-list {
