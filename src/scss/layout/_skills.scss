@@ -1,8 +1,28 @@
-@use "../utils/mixins" as m;
-
 .skills {
   background-color: var(--background-color);
 }
-.skills-subtitle {
-  @include m.font(18px, 600, 25px);
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-items {
+  flex-basis: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 5px;
+  border-radius: 8px;
+  background-color: var(--second-text-color);
+
+  & span {
+    font-size: 0.7rem;
+  }
+
+  & svg {
+    fill: currentColor;
+  }
 }

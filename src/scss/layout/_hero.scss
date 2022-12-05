@@ -3,17 +3,26 @@
 .hero {
   padding-top: 140px;
   padding-bottom: 140px;
-  background-color: var(--second-text-color);
+
   color: var(--white-text-color);
+  background-color: var(--second-text-color);
+  background-image: linear-gradient(
+      rgba(198, 108, 73, 0.3),
+      rgba(198, 108, 73, 0.3)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
-  margin-bottom: 35px;
+  margin-bottom: 2.25rem;
   @include m.font(64px, 400, 78px);
 }
 
 .hero-subtitle {
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
   @include m.font(24px, 400, 29px);
 }
 
