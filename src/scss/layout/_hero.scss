@@ -1,22 +1,23 @@
 @use "../utils/mixins" as m;
 
 .hero {
-  padding-top: 140px;
-  padding-bottom: 140px;
-
+  padding-top: 120px;
+  height: 100vh;
   color: var(--white-text-color);
-  // background: linear-gradient(324deg, #8b4136 10%, #c66c49 40%, #f5d6ab);
-  background-color: var(--second-text-color);
-  background-image: linear-gradient(
-      rgba(198, 108, 73, 0.3),
-      rgba(198, 108, 73, 0.3)
-    ),
-    url(../images/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(
+    324deg,
+    var(--hover-color),
+    var(--second-text-color)
+  );
 }
-
+.hero-flex-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.hero-flex-item {
+  flex-basis: calc((100% - 10px) / 2);
+}
 .hero-title {
   margin-bottom: 2.25rem;
   @include m.font(64px, 400, 78px);
@@ -28,11 +29,26 @@
 }
 
 .hero-link {
+  position: relative;
+  z-index: 1;
   @include m.font(18px, 400, 22px);
-  text-decoration: underline;
 
-  &:hover,
-  &:focus {
-    color: var(--hover-color);
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.25em;
+    right: -0.25em;
+    background-color: var(--hover-color);
+    transform-origin: bottom center;
+    transform: scaleY(0.1);
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:hover::before {
+    transform: scaleY(1);
+    background-color: var(--hover-color);
   }
 }
