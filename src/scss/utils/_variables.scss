@@ -1,16 +1,11 @@
 :root {
+  // Colors
   --primary-text-color: #333333;
   --second-text-color: #f5d6ab;
   --white-text-color: #fff;
   --background-color: #fffaf2;
   --hover-color: #c66c49;
+  // Typography
   --primary-font: "Libre Franklin", sans-serif;
+  //Animation
 }
-
-// $colors: (
-//   "primary": #fff,
-// );
-
-// @function getColor($get) {
-//   @return map-get($colors, $key);
-// }

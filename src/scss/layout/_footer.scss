@@ -1,3 +1,5 @@
+@use "../utils/mixins" as m;
+
 .footer {
   padding-top: 30px;
   padding-bottom: 10px;
@@ -5,5 +7,6 @@
 }
 
 .footer-desc {
+  @include m.font(13px, 400, 20px);
   text-align: center;
 }
