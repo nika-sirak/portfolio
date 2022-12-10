@@ -1,3 +1,5 @@
+@use "../utils/mixins" as m;
+
 .social-links-list {
   margin-bottom: 0.5rem;
   display: flex;
@@ -16,9 +18,10 @@
   align-items: center;
   border-radius: 50%;
 
-  transition: background-color 250ms ease-in-out;
+  @include m.transition(background-color);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--second-text-color);
   }
 }

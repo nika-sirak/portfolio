@@ -40,3 +40,8 @@
   font-weight: $fw;
   line-height: decimal-round(calc($lh/$fs), 2);
 }
+
+@mixin transition($property) {
+  transition: all 0.3s ease-in-out;
+  transition-property: $property;
+}
