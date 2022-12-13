@@ -1,8 +1,8 @@
 @use "../utils/mixins" as m;
 
 .hero {
+  min-height: 100vh;
   padding-top: 120px;
-  height: 100vh;
   color: var(--white-text-color);
   background: linear-gradient(
     324deg,

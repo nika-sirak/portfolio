@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  // height: 100%;
   font-family: var(--primary-font);
   color: var(--primary-text-color);
 }
@@ -39,4 +40,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.wraper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
