@@ -1,6 +1,12 @@
 @use "../utils/mixins" as m;
 
 .title {
-  margin-bottom: 75px;
+  margin-bottom: 2.8em;
   @include m.font(24px, 700, 29px);
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 3.125em;
+  }
 }

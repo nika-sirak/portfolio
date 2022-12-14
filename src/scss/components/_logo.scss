@@ -1,7 +1,7 @@
 @use "../utils/mixins" as m;
 
 .logo {
-  margin-right: auto;
+  display: inline-block;
   padding: 8px 6px;
   @include m.font(24px, 400, 29px);
   color: var(--white-text-color);

@@ -21,19 +21,10 @@
       class="github-corner"
       aria-label="View source on GitHub"
       ><svg
+        class="github-corner-icon"
         width="90"
         height="90"
         viewBox="0 0 250 250"
-        style="
-          fill: #000;
-          color: #f5d6ab;
-          position: absolute;
-          top: 0;
-          border: 0;
-          left: 0;
-          transform: scale(-1, 1);
-          z-index: 9999;
-        "
         aria-hidden="true"
       >
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -49,34 +40,7 @@
           class="octo-body"
         ></path>
       </svg>
-      <style>
-        .github-corner:hover .octo-arm {
-          animation: octocat-wave 560ms ease-in-out;
-        }
-        @keyframes octocat-wave {
-          0%,
-          100% {
-            transform: rotate(0);
-          }
-          20%,
-          60% {
-            transform: rotate(-25deg);
-          }
-          40%,
-          80% {
-            transform: rotate(10deg);
-          }
-        }
-        @media (max-width: 500px) {
-          .github-corner:hover .octo-arm {
-            animation: none;
-          }
-          .github-corner .octo-arm {
-            animation: octocat-wave 560ms ease-in-out;
-          }
-        }
-      </style></a
-    >
+    </a>
     <div class="wrapper">
       <header class="header">
         <div class="container header-container">
@@ -100,16 +64,20 @@
               </li>
             </ul>
           </nav>
+          <!-- Mobile Header-->
+          <button type="button" class="btn-menu">
+            <span class="btn-menu__icon"></span>
+          </button>
         </div>
       </header>
       <main>
         <section class="hero" id="hero">
-          <div class="container hero-flex-container">
-            <div class="hero-flex-item">
+          <div class="container hero-flex">
+            <div class="hero-flex-left">
               <h1 class="hero-title">Hi, It’s Veronika Sirak</h1>
               <p class="hero-subtitle">Full-stack Developer from Portugal</p>
             </div>
-            <div class="hero-flex-item">
+            <div class="hero-flex-right">
               <img
                 class="hero-img"
                 src="./images/hero-girl.png"
@@ -137,7 +105,7 @@
             </p>
           </div>
         </section>
-        <section id="skills" class="skills section">
+        <!-- <section id="skills" class="skills section">
           <div class="container">
             <h2 class="title">Skills</h2>
             <ul class="tech-list">
@@ -197,8 +165,8 @@
               </li>
             </ul>
           </div>
-        </section>
-        <section id="projects" class="projects section">
+        </section> -->
+        <!-- <section id="projects" class="projects section">
           <div class="container">
             <h2 class="title">Projects</h2>
 
@@ -396,9 +364,9 @@
               </li>
             </ul>
           </div>
-        </section>
+        </section> -->
       </main>
-      <footer id="contact" class="footer">
+      <!-- <footer id="contact" class="footer">
         <div class="container">
           <ul class="social-links-list">
             <li class="social-links-item">
@@ -428,7 +396,8 @@
           </ul>
           <p class="footer-desc">Copyright &copy; Veronika Sirak</p>
         </div>
-      </footer>
+      </footer> -->
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
