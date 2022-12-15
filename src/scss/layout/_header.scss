@@ -15,14 +15,73 @@
   align-items: center;
 }
 
-.nav {
-  display: none;
+@media screen and (max-width: 767.98px) {
+  .lock {
+    overflow: hidden;
+  }
+
+  .nav {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    overflow: auto;
+
+    padding: 140px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+
+    background: linear-gradient(
+      324deg,
+      var(--hover-color),
+      var(--second-text-color)
+    );
+    @include m.transition(left);
+
+    // &::before {
+    //   content: "";
+    //   position: fixed;
+    //   width: 100%;
+    //   top: 0;
+    //   left: 0;
+    //   height: 115px;
+    //   // background: linear-gradient(
+    //   //   324deg,
+    //   //   var(--hover-color),
+    //   //   var(--second-text-color)
+    //   // );
+    // }
+
+    &.active {
+      left: 0;
+    }
+  }
+
+  // .nav-list {
+  //   position: absolute;
+  //   top: 20%;
+  //   left: 50%;
+  //   transform: translate(-50%, 0);
+  // }
+
+  .nav-list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .nav-list-link {
+    @include m.font(24px, 700, 28px);
+    letter-spacing: 3px;
+    color: var(--white-text-color);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .nav {
     display: block;
   }
+
   .header-container {
     display: flex;
     align-items: center;
@@ -87,7 +146,7 @@
     transform: rotate(10deg);
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991px) {
   .github-corner {
     display: none;
   }
@@ -102,21 +161,3 @@
   //   animation: octocat-wave 560ms ease-in-out;
   // }
 }
-
-// .nav {
-//   position: fixed;
-//   z-index: 20;
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   right: 0;
-//   overflow: auto;
-//   background-color: rgba($color: #fff, $alpha: 0.7);
-// }
-
-// .nav-list {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
