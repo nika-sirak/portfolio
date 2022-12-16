@@ -33,13 +33,16 @@
     display: flex;
     justify-content: center;
 
+    @include m.transition(left);
     background: linear-gradient(
       324deg,
       var(--hover-color),
       var(--second-text-color)
     );
-    @include m.transition(left);
 
+    &.active {
+      left: 0;
+    }
     // &::before {
     //   content: "";
     //   position: fixed;
@@ -53,10 +56,6 @@
     //   //   var(--second-text-color)
     //   // );
     // }
-
-    &.active {
-      left: 0;
-    }
   }
 
   // .nav-list {

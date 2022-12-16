@@ -18,10 +18,15 @@
   align-items: center;
   border-radius: 50%;
 
+  color: var(--white-text-color);
   @include m.transition(background-color);
 
   &:hover,
   &:focus {
-    background-color: var(--second-text-color);
+    background-color: var(--hover-color);
   }
+}
+
+.social-link-icon {
+  fill: currentColor;
 }

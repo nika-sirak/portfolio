@@ -14,7 +14,7 @@
 @use "./components/container";
 @use "./components/logo";
 @use "./components/title";
-@use "./components/buttons";
+@use "./components/menu-button";
 @use "./components/social-links";
 
 //Layout
@@ -23,4 +23,5 @@
 @use "./layout/about";
 @use "./layout/skills";
 @use "./layout/projects";
+@use "./layout/contact";
 @use "./layout/footer";

@@ -3,12 +3,13 @@
 .footer {
   padding-top: 30px;
   padding-bottom: 10px;
-  background-color: var(--background-color);
-  // background: linear-gradient(
-  //   324deg,
-  //   var(--hover-color),
-  //   var(--second-text-color)
-  // );
+
+  color: var(--white-text-color);
+  background: linear-gradient(
+    324deg,
+    var(--hover-color),
+    var(--second-text-color)
+  );
 }
 
 .footer-desc {
