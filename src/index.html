@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
@@ -108,7 +112,7 @@
         </section>
         <section id="skills" class="skills section">
           <div class="container">
-            <h2 class="title">Skills</h2>
+            <h2 class="title wow animate__animated animate__bounce">Skills</h2>
             <ul class="tech-list">
               <li class="tech-items">
                 <svg width="50" height="50">
@@ -193,7 +197,7 @@
                     </p>
                     <ul class="project-list">
                       <li class="project-list-item">
-                        <a class="project-link"
+                        <a class="project-link btn"
                           ><svg width="16" height="16">
                             <use href="./images/sprite.svg#open"></use>
                           </svg>
@@ -201,7 +205,7 @@
                         >
                       </li>
                       <li class="project-list-item">
-                        <a class="project-link">
+                        <a class="project-link btn">
                           <svg width="16" height="16">
                             <use href="./images/sprite.svg#github"></use>
                           </svg>
@@ -238,7 +242,7 @@
                     <ul class="project-list">
                       <li class="project-list-item">
                         <a
-                          class="project-link"
+                          class="project-link btn"
                           href="https://book-reder-spec27.netlify.app/login"
                           target="_blank"
                           rel="noreferrer noopener"
@@ -250,7 +254,7 @@
                       </li>
                       <li class="project-list-item">
                         <a
-                          class="project-link"
+                          class="project-link btn"
                           href="https://github.com/nika-sirak/books-reader_front"
                           target="_blank"
                           rel="noreferrer noopener"
@@ -287,7 +291,7 @@
                     <ul class="project-list">
                       <li class="project-list-item">
                         <a
-                          class="project-link"
+                          class="project-link btn"
                           href="https://nika-sirak.github.io/goit-react-hw-08-phonebook/"
                           target="_blank"
                           rel="noreferrer noopener"
@@ -299,7 +303,7 @@
                       </li>
                       <li class="project-list-item">
                         <a
-                          class="project-link"
+                          class="project-link btn"
                           href="https://github.com/nika-sirak/goit-react-hw-08-phonebook"
                           target="_blank"
                           rel="noreferrer noopener"
@@ -335,7 +339,7 @@
                     <ul class="project-list">
                       <li class="project-list-item">
                         <a
-                          class="project-link"
+                          class="project-link btn"
                           href="https://virysik.github.io/goit-js-final-team-project-filmoteka/"
                           target="_blank"
                           rel="noreferrer noopener"
@@ -348,7 +352,7 @@
                       </li>
                       <li class="project-list-item">
                         <a
-                          class="project-link"
+                          class="project-link btn"
                           href="https://github.com/nika-sirak/goit-js-final-team-project-filmoteka"
                           target="_blank"
                           rel="noreferrer noopener"
@@ -370,19 +374,39 @@
           <div class="container">
             <h2 class="title">Get in touch</h2>
             <form class="contact-form">
-              <labe>
-                Name
-                <input type="text">
+              <div class="contact-form-wrapper">
+                <label class="contact-form-label">
+                  <span class="contact-form-name">Name</span>
+                  <span class="input-wrapper">
+                    <input class="contact-form-input" type="text" name="name" />
+                    <svg class="contact-form-icon">
+                      <use href="./images/sprite.svg#user"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="contact-form-label">
+                  <span class="contact-form-name">Email</span>
+                  <span class="input-wrapper">
+                    <input
+                      class="contact-form-input"
+                      type="email"
+                      name="email"
+                      required
+                    />
+                    <svg class="contact-form-icon">
+                      <use href="./images/sprite.svg#email"></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <label class="contact-form-label">
+                <span class="contact-form-name">Message</span>
+                <textarea
+                  class="contact-form-message"
+                  name="message"
+                ></textarea>
               </label>
-              <label>
-                Email
-                <input type="email">
-              </label>
-              <label>
-                Message
-                <textarea name=""rows="10"></textarea>
-              </label>
-              <button type="submit">Send Message</button>
+              <button class="form-btn btn" type="submit">Send Message</button>
             </form>
           </div>
         </section>
@@ -419,6 +443,7 @@
         </div>
       </footer>
     </div>
-    <script src="./index.js"></script>
+    <script src="./js/wow.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
