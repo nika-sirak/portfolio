@@ -70,7 +70,6 @@
 
   @include m.transition(fill);
 
-  &:hover,
   .contact-form-input:focus + & {
     fill: var(--hover-color);
   }
