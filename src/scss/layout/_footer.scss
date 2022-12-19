@@ -4,12 +4,8 @@
   padding-top: 30px;
   padding-bottom: 10px;
 
-  color: var(--white-text-color);
-  background: linear-gradient(
-    324deg,
-    var(--hover-color),
-    var(--second-text-color)
-  );
+  color: var(--second-text-color);
+  background: var(--back-gradient);
 }
 
 .footer-desc {

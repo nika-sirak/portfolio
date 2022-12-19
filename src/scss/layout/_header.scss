@@ -34,11 +34,7 @@
     justify-content: center;
 
     @include m.transition(left);
-    background: linear-gradient(
-      324deg,
-      var(--hover-color),
-      var(--second-text-color)
-    );
+    background: var(--back-gradient);
 
     &.active {
       left: 0;
@@ -53,17 +49,10 @@
     //   // background: linear-gradient(
     //   //   324deg,
     //   //   var(--hover-color),
-    //   //   var(--second-text-color)
+    //   //   var(--second-back-color)
     //   // );
     // }
   }
-
-  // .nav-list {
-  //   position: absolute;
-  //   top: 20%;
-  //   left: 50%;
-  //   transform: translate(-50%, 0);
-  // }
 
   .nav-list-item:not(:last-child) {
     margin-bottom: 20px;
@@ -72,7 +61,7 @@
   .nav-list-link {
     @include m.font(24px, 700, 28px);
     letter-spacing: 3px;
-    color: var(--white-text-color);
+    color: var(--second-text-color);
   }
 }
 
@@ -95,7 +84,7 @@
     position: relative;
 
     @include m.font(18px, 700, 22px);
-    color: var(--white-text-color);
+    color: var(--second-text-color);
 
     &::before {
       content: "";
@@ -120,7 +109,7 @@
 //github icon
 .github-corner-icon {
   fill: #000;
-  color: #f5d6ab;
+  color: #fff;
   position: absolute;
   top: 0;
   border: 0;

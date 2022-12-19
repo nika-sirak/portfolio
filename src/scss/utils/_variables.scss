@@ -1,12 +1,18 @@
 :root {
   // Colors
-  --primary-text-color: #333333;
-  --second-text-color: #f5d6ab;
-  --white-text-color: #fff;
-  --background-color: #fffaf2;
-  --hover-color: #c66c49;
+  // --primary-text-color: #333333;
+  // --second-text-color: #fff;
+  // --back-color: #fffaf2;
+  // --second-back-color: #f5d6ab;
+  // --back-gradient: linear-gradient(
+  //   324deg,
+  //   var(--hover-color),
+  //   var(--second-back-color)
+  // );
+  // --hover-color: #c66c49;
+
   // Typography
   --primary-font: "Libre Franklin", sans-serif;
   // Animation
-  --animate-duration: 2000ms;
+  --animate-duration: 1500ms;
 }

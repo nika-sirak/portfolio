@@ -1,14 +1,11 @@
 @use "../utils/mixins" as m;
 
 .hero {
+  min-height: 85vh;
   padding-top: 120px;
   padding-bottom: 120px;
-  color: var(--white-text-color);
-  background: linear-gradient(
-    324deg,
-    var(--hover-color),
-    var(--second-text-color)
-  );
+  color: var(--second-text-color);
+  background: var(--back-gradient);
 }
 
 .hero-flex {
@@ -36,7 +33,7 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    min-height: calc(100vh + 100px);
+    min-height: 100vh;
   }
   .hero-flex {
     display: flex;

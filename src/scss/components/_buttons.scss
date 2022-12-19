@@ -6,9 +6,10 @@
   overflow: hidden;
 
   color: var(--primary-text-color);
-  background-color: var(--second-text-color);
+  background-color: var(--second-back-color);
 
   border-radius: 10px;
+  @include m.transition(transform);
 
   &::after {
     content: "";
@@ -29,6 +30,6 @@
 
   &:hover,
   &:focus {
-    background-color: darken($color: #f5d6ab, $amount: 8);
+    transform: scale(1.05);
   }
 }

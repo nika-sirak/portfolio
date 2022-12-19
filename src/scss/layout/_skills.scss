@@ -1,5 +1,5 @@
 .skills {
-  background-color: var(--background-color);
+  background-color: var(--back-color);
 }
 
 .tech-list {
@@ -16,7 +16,7 @@
   gap: 10px;
   padding: 10px 10px 5px;
   border-radius: 8px;
-  background-color: var(--second-text-color);
+  background-color: var(--second-back-color);
 
   & span {
     font-size: 0.7rem;

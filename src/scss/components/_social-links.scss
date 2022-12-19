@@ -18,7 +18,7 @@
   align-items: center;
   border-radius: 50%;
 
-  color: var(--white-text-color);
+  color: var(--second-text-color);
   @include m.transition(background-color);
 
   &:hover,
