@@ -95,12 +95,37 @@
               </p>
             </div>
             <div class="hero-flex-right">
-              <img
-                class="hero-img hidden"
-                data-action="animate-hero"
-                src="./images/hero-girl.png"
-                alt="girl with laptop"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/hero-girl.png?as=webp&width=400 1x,
+                    ./images/hero-girl.png?as=webp&width=800 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/hero-girl.png?as=avif&width=400 1x,
+                    ./images/hero-girl.png?as=avif&width=800 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./images/hero-girl.png?as=png&width=400 1x,
+                    ./images/hero-girl.png?as=png&width=800 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="hero-img hidden"
+                  data-action="animate-hero"
+                  src="./images/hero-girl.png?width=400"
+                  alt="girl with laptop"
+                  width="400"
+                  height="400"
+                />
+              </picture>
             </div>
           </div>
         </section>
