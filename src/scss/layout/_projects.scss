@@ -1,5 +1,9 @@
 @use "../utils/mixins" as m;
 
+.projects {
+  background-color: var(--default-bg-color);
+}
+
 .projects-list-item {
   max-width: 480px;
   overflow: hidden;

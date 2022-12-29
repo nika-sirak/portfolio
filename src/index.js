@@ -29,15 +29,10 @@ function onMenuLinkEl() {
 //scroll animation
 const heroObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting && entry.target.classList.contains("hero-anim")) {
-      entry.target.classList.add("animate__slideInLeft");
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animation");
     } else {
-      entry.target.classList.remove("animate__slideInLeft");
-    }
-    if (entry.isIntersecting && !entry.target.classList.contains("hero-anim")) {
-      entry.target.classList.add("animate__slideInRight");
-    } else {
-      entry.target.classList.remove("animate__slideInRight");
+      entry.target.classList.remove("animation");
     }
   });
 });
@@ -47,9 +42,22 @@ heroEl.forEach((el) => heroObserver.observe(el));
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("animate__slideInUp");
+      entry.target.classList.add("animation");
     }
   });
 });
 const mainEl = document.querySelectorAll("[data-action='animate']");
 mainEl.forEach((el) => observer.observe(el));
+
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-items");
+    }
+  });
+});
+const skillsEl = document.querySelectorAll(".tech-items");
+skillsEl.forEach((el) => {
+  skillObserver.observe(el);
+  el.classList.add("hidden-items");
+});

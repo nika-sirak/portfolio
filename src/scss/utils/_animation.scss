@@ -1,0 +1,25 @@
+.hidden {
+  opacity: 0;
+  filter: blur(4px);
+  transition: all 1000ms ease-in-out;
+}
+.animation {
+  opacity: 1;
+  filter: blur(0);
+}
+
+@media screen and (min-width: 1200px) {
+  .hidden-items {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateX(-100%);
+
+    transition: all 700ms ease-in-out;
+  }
+
+  .animate-items {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}

@@ -14,10 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <link rel="stylesheet" href="./scss/main.scss" />
     <link
       rel="stylesheet"
@@ -91,22 +87,16 @@
         <section class="hero" id="hero">
           <div class="container hero-flex">
             <div class="hero-flex-left">
-              <h1
-                class="hero-title hero-anim animate__animated"
-                data-action="animate-hero"
-              >
+              <h1 class="hero-title hidden" data-action="animate-hero">
                 Hi, It’s Veronika Sirak
               </h1>
-              <p
-                class="hero-subtitle hero-anim animate__animated"
-                data-action="animate-hero"
-              >
+              <p class="hero-subtitle hidden" data-action="animate-hero">
                 Full-stack Developer from Portugal
               </p>
             </div>
             <div class="hero-flex-right">
               <img
-                class="hero-img animate__animated"
+                class="hero-img hidden"
                 data-action="animate-hero"
                 src="./images/hero-girl.png"
                 alt="girl with laptop"
@@ -115,7 +105,7 @@
           </div>
         </section>
         <section id="about" class="about section">
-          <div class="container animate__animated" data-action="animate">
+          <div class="container">
             <h2 class="title">About me</h2>
             <p class="about-description">
               Hi! I’m Veronika Sirak, a full-stack web developer based in
@@ -134,7 +124,7 @@
           </div>
         </section>
         <section id="skills" class="skills section">
-          <div class="container animate__animated" data-action="animate">
+          <div class="container hidden" data-action="animate">
             <h2 class="title">Skills</h2>
             <ul class="tech-list">
               <li class="tech-items">
@@ -195,7 +185,7 @@
           </div>
         </section>
         <section id="projects" class="projects section">
-          <div class="container animate__animated" data-action="animate">
+          <div class="container">
             <h2 class="title">Projects</h2>
             <ul class="projects-list">
               <li class="projects-list-item">
@@ -219,7 +209,11 @@
                     </p>
                     <ul class="project-list">
                       <li class="project-list-item">
-                        <a class="project-link btn"
+                        <a
+                          class="project-link btn"
+                          href="https://thetasteat.netlify.app/"
+                          target="_blank"
+                          rel="noreferrer noopener"
                           ><svg width="16" height="16">
                             <use href="./images/sprite.svg#open"></use>
                           </svg>
@@ -227,7 +221,12 @@
                         >
                       </li>
                       <li class="project-list-item">
-                        <a class="project-link btn">
+                        <a
+                          class="project-link btn"
+                          href="https://github.com/nika-sirak/thetasteat"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
                           <svg width="16" height="16">
                             <use href="./images/sprite.svg#github"></use>
                           </svg>
@@ -393,7 +392,7 @@
           </div>
         </section>
         <section id="contact" class="section contact">
-          <div class="container animate__animated" data-action="animate">
+          <div class="container hidden" data-action="animate">
             <h2 class="title">Get in touch</h2>
             <form
               class="contact-form"
