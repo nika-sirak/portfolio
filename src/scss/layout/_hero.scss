@@ -1,7 +1,7 @@
 @use "../utils/mixins" as m;
 
 .hero {
-  min-height: 85vh;
+  min-height: 100vh;
   padding-top: 120px;
   padding-bottom: 120px;
   color: var(--second-text-color);
@@ -32,9 +32,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    min-height: 100vh;
-  }
   .hero-flex {
     display: flex;
     align-items: center;
