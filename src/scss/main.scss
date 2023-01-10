@@ -11,9 +11,11 @@
 @use "./base/common";
 
 //Components
+@use "./components/spinner";
 @use "./components/section";
 @use "./components/container";
 @use "./components/logo";
+@use "./components/mouse";
 @use "./components/title";
 @use "./components/menu-button";
 @use "./components/buttons";

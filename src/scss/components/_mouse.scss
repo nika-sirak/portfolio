@@ -1,0 +1,36 @@
+.mouse {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 48px;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+
+  border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+}
+
+.mouse::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  animation: fadeDown 1s ease-out infinite;
+}
+
+@keyframes fadeDown {
+  0% {
+    top: 0%;
+    opacity: 1;
+  }
+  100% {
+    top: 60%;
+    opacity: 0;
+  }
+}
