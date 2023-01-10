@@ -1,15 +1,25 @@
-@media (prefers-color-scheme: light) {
-  :root {
-    --primary-text-color: #333333;
-    --second-text-color: #fff;
-    --back-color: #fffaf2;
-    --second-back-color: #f5d6ab;
-    --default-bg-color: #fff;
-    --back-gradient: linear-gradient(
-      324deg,
-      var(--hover-color),
-      var(--second-back-color)
-    );
-    --hover-color: #c66c49;
+:root {
+  --primary-text-color: #333333;
+  --second-text-color: #fff;
+  --back-color: #fffaf2;
+  --second-back-color: #f5d6ab;
+  --default-bg-color: #fff;
+  --back-gradient: linear-gradient(
+    324deg,
+    var(--hover-color),
+    var(--second-back-color)
+  );
+  --hover-color: #c66c49;
+}
+
+.switcher__radio {
+  filter: invert(1);
+
+  &:checked {
+    filter: invert(0);
   }
+}
+
+.switcher__status {
+  filter: invert(1);
 }

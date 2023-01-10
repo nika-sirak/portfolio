@@ -20,6 +20,9 @@
     overflow: hidden;
   }
 
+  .header-menu {
+    order: 2;
+  }
   .nav {
     position: fixed;
     z-index: 4;
@@ -70,14 +73,9 @@
     display: block;
   }
 
-  .header-container {
-    display: flex;
-    align-items: center;
-  }
-
   .nav-list {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .nav-list-link {
@@ -106,6 +104,12 @@
   }
 }
 
+@media screen and (min-width: 991px) {
+  .nav-list {
+    gap: 3rem;
+  }
+}
+
 //github icon
 .github-corner-icon {
   fill: #000;
@@ -116,6 +120,7 @@
   left: 0;
   transform: scale(-1, 1);
   z-index: 9999;
+  opacity: 0.85;
 }
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
@@ -138,14 +143,4 @@
   .github-corner {
     display: none;
   }
-  // .github-corner:hover .octo-arm {
-  //   animation: none;
-  // }
-  // .github-corner-icon {
-  //   width: 80px;
-  //   height: 80px;
-  // }
-  // .github-corner .octo-arm {
-  //   animation: octocat-wave 560ms ease-in-out;
-  // }
 }
