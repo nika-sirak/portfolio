@@ -542,7 +542,11 @@
             </ul>
           </div>
         </section>
-        <section id="contact" class="section contact">
+        <section
+          id="contact"
+          class="section contact"
+          data-action="scroll-to-top"
+        >
           <div class="container hidden" data-action="animate">
             <h2 class="title">Get in touch</h2>
             <form
@@ -586,6 +590,11 @@
               <button class="form-btn btn" type="submit">Send Message</button>
             </form>
           </div>
+          <button class="scroll-top" type="button">
+            <svg class="scroll-top__icon">
+              <use href="./images/sprite.svg#top-arrow"></use>
+            </svg>
+          </button>
         </section>
       </main>
       <footer class="footer">
@@ -620,6 +629,7 @@
         </div>
       </footer>
     </div>
+
     <span class="spinner"></span>
     <script src="./index.js" type="module"></script>
   </body>
