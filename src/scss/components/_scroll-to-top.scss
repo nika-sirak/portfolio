@@ -14,7 +14,7 @@
   background-color: var(--back-color);
   border-radius: 50%;
   border: none;
-  @include m.transition((color, background-color));
+  @include m.transition((color, background-color, opacity));
 
   cursor: pointer;
   opacity: 0;
