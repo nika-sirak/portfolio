@@ -1,0 +1,10 @@
+[
+  {
+    "title": "The Tasteat",
+    "description": "The Tasteat is a responsive landing page designed exclusively for The Tasteat restaurant. It serves as a one-stop destination for customers to access vital information such as the restaurant's menu, special prices, customer feedback, and the convenience of booking a table. This user-friendly platform ensures customers can easily find and explore the essential details they need for a dining experience at The Tasteat.",
+    "stack": "['HTML', 'SASS', 'JavaScript']",
+    "preview": "https://thetasteat.netlify.app/",
+    "gitHub": "https://github.com/nika-sirak/thetasteat",
+    "image": "../../images/thetasteat.jpg"
+  }
+]

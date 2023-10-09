@@ -164,11 +164,11 @@
             <p class="about-description">
               Hi! I’m Veronika Sirak, a full-stack web developer based in
               Portugal. After working as a statistic tutor for almost seven
-              years, I decided to pursue a career in web development. I’ve
-              enrolled in a part-time immersive program at GoIT school as a Full
-              Stack Developer in Ukraine. Having just graduated from this
-              rigorous program, I can say that applying to a coding Bootcamp has
-              been the best decision I have ever made. I love to learn new
+              years, I decided to pursue a career in web development. I
+              successfully completed a challenging program at Binary Studio
+              Academy as a JS Developer. Having just graduated from this
+              rigorous program, I can say that applying to the Academy has been
+              the best decision I have ever made. I love to learn new
               technologies and flex my creativity to create amazing things.
             </p>
             <p class="about-description">
@@ -279,9 +279,14 @@
                   <div class="project-desc-wrap">
                     <h3 class="project-title">The Tasteat</h3>
                     <p class="project-description">
-                      Own project. Responsive web page layout for the
-                      restaurant. Users can see the menu and book a table for
-                      dinner.
+                      The Tasteat is a responsive landing page designed
+                      exclusively for The Tasteat restaurant. It serves as a
+                      one-stop destination for customers to access vital
+                      information such as the restaurant's menu, special prices,
+                      customer feedback, and the convenience of booking a table.
+                      This user-friendly platform ensures customers can easily
+                      find and explore the essential details they need for a
+                      dining experience at The Tasteat.
                     </p>
                     <p class="project-stack">
                       <span>Tech Stack :</span> HTML, SASS, JavaScript
@@ -307,6 +312,85 @@
                           rel="noreferrer noopener"
                         >
                           <svg width="16" height="16">
+                            <use href="./images/sprite.svg#github"></use>
+                          </svg>
+                          View Code</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </li>
+              <li class="projects-list-item">
+                <article class="project">
+                  <div class="project-img-wrap">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/bsa-talents.jpg?as=webp&width=480 1x,
+                          ./images/bsa-talents.jpg?as=webp&width=960 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/bsa-talents.jpg?as=avif&width=480 1x,
+                          ./images/bsa-talents.jpg?as=avif&width=960 2x
+                        "
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/bsa-talents.jpg?as=jpg&width=480 1x,
+                          ./images/bsa-talents.jpg?as=jpg&width=960 2x
+                        "
+                        type="image/jpg"
+                      />
+                      <img
+                        class="project-img"
+                        src="./images/bsa-talents.jpg?width=480"
+                        alt="home page"
+                        width="480"
+                        height="300"
+                      />
+                    </picture>
+                  </div>
+                  <div class="project-desc-wrap">
+                    <h3 class="project-title">BSA Talents</h3>
+                    <p class="project-description">
+                      BSA Talents is a comprehensive platform designed for
+                      developers who have successfully graduated from the Binary
+                      Studio Academy. The platform offers a user-friendly
+                      experience, allowing developers to showcase their skills
+                      and achievements while providing employers with a
+                      streamlined process for finding the ideal match.
+                      Additionally, an admin page is incorporated to monitor and
+                      manage the entire platform efficiently.
+                    </p>
+                    <p class="project-stack">
+                      <span>Tech Stack :</span> TypeScript, MUI, React, Redux,
+                      NodeJS, Fastify, Knex, Objection.js, PostgreSQL
+                    </p>
+                    <ul class="project-list">
+                      <li class="project-list-item">
+                        <a
+                          class="project-link btn"
+                          href="http://bsa-talents.us-east-1.elasticbeanstalk.com/sign-in"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          ><svg width="16" height="16">
+                            <use href="./images/sprite.svg#open"></use>
+                          </svg>
+                          Live Preview</a
+                        >
+                      </li>
+                      <li class="project-list-item">
+                        <a
+                          class="project-link btn"
+                          href="https://github.com/nika-sirak/bsa-2023-bsa-talents"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          ><svg width="16" height="16">
                             <use href="./images/sprite.svg#github"></use>
                           </svg>
                           View Code</a
@@ -353,15 +437,17 @@
                   <div class="project-desc-wrap">
                     <h3 class="project-title">Books-reader</h3>
                     <p class="project-description">
-                      Team project. The most expanded application I had the
-                      opportunity to work with. The books-reader application
-                      allows users to add books to their library and start
-                      training, where the user will see his statistics: time and
-                      amount of material read.
+                      Books Reader is a full-stack application built using the
+                      MERN stack that enhances your reading experience. This app
+                      allows users to curate lists of their current reading
+                      selections effortlessly. With a user-friendly interface,
+                      it enables setting reading timers for personalized
+                      sessions. The app also provides intuitive statistics and
+                      graphics to represent your reading progress visually.
                     </p>
                     <p class="project-stack">
                       <span>Tech Stack :</span> HTML, Styled Components, React,
-                      Redux, NodeJS
+                      Redux, NodeJS, Express, MongoDB
                     </p>
                     <ul class="project-list">
                       <li class="project-list-item">
@@ -392,79 +478,7 @@
                   </div>
                 </article>
               </li>
-              <li class="projects-list-item">
-                <article class="project">
-                  <div class="project-img-wrap">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/phonebook.jpg?as=webp&width=480 1x,
-                          ./images/phonebook.jpg?as=webp&width=960 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/phonebook.jpg?as=avif&width=480 1x,
-                          ./images/phonebook.jpg?as=avif&width=960 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/phonebook.jpg?as=jpg&width=480 1x,
-                          ./images/phonebook.jpg?as=jpg&width=960 2x
-                        "
-                        type="image/jpg"
-                      />
-                      <img
-                        class="project-img"
-                        src="./images/phonebook.jpg?width=480"
-                        alt="home page"
-                        width="480"
-                        height="300"
-                      />
-                    </picture>
-                  </div>
-                  <div class="project-desc-wrap">
-                    <h3 class="project-title">Phonebook</h3>
-                    <p class="project-description">
-                      Own project. Application for work with private collections
-                      of contacts. Users can register, add, filter, or delete a
-                      private group of contacts.
-                    </p>
-                    <p class="project-stack">
-                      <span>Tech Stack :</span> HTML, CSS, React, Redux
-                    </p>
-                    <ul class="project-list">
-                      <li class="project-list-item">
-                        <a
-                          class="project-link btn"
-                          href="https://nika-sirak.github.io/goit-react-hw-08-phonebook/"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          ><svg width="16" height="16">
-                            <use href="./images/sprite.svg#open"></use>
-                          </svg>
-                          Live Preview</a
-                        >
-                      </li>
-                      <li class="project-list-item">
-                        <a
-                          class="project-link btn"
-                          href="https://github.com/nika-sirak/goit-react-hw-08-phonebook"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          ><svg width="16" height="16">
-                            <use href="./images/sprite.svg#github"></use>
-                          </svg>
-                          View Code</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </article>
-              </li>
+
               <li class="projects-list-item">
                 <article class="project">
                   <div class="project-img-wrap">
@@ -500,19 +514,25 @@
                     </picture>
                   </div>
                   <div class="project-desc-wrap">
-                    <h3 class="project-title">Filmoteka</h3>
+                    <h3 class="project-title">Movie App</h3>
                     <p class="project-description">
-                      Team project. Responsive website for finding movies and
-                      saving to your movie library.
+                      The Movie app is a single-page application built with
+                      React and designed to cater to movie enthusiasts. Under
+                      the hood, it uses The Movie Database (TMDB) API as an
+                      external data source and React Router DOM for routing.
+                      With a responsive, user-friendly interface, the app
+                      provides a centralized space for users to explore the most
+                      popular movies or search for specific titles.
                     </p>
                     <p class="project-stack">
-                      <span>Tech Stack :</span> HTML, SASS, JS, RestAPI
+                      <span>Tech Stack :</span> JavaScript, ReactJS, React
+                      Router DOM, CSS, Rest API integration
                     </p>
                     <ul class="project-list">
                       <li class="project-list-item">
                         <a
                           class="project-link btn"
-                          href="https://virysik.github.io/goit-js-final-team-project-filmoteka/"
+                          href="https://nika-sirak.github.io/goit-react-hw-05-movies/"
                           target="_blank"
                           rel="noreferrer noopener"
                         >
@@ -525,7 +545,7 @@
                       <li class="project-list-item">
                         <a
                           class="project-link btn"
-                          href="https://github.com/nika-sirak/goit-js-final-team-project-filmoteka"
+                          href="https://github.com/nika-sirak/goit-react-hw-05-movies"
                           target="_blank"
                           rel="noreferrer noopener"
                         >
